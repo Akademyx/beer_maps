@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  brand_id: 
+  type: 
+  description: MyText
+  abv: 1.5
+  ibu: 1.5
+  user_id: 
+
+two:
+  name: MyString
+  brand_id: 
+  type: 
+  description: MyText
+  abv: 1.5
+  ibu: 1.5
+  user_id: 
