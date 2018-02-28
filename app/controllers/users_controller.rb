@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+<<<<<<< HEAD
     def index
     end
 
@@ -20,5 +21,8 @@ class UsersController < ApplicationController
   private
   def user_params
     params.require(:user).permit(:first_name,:last_name,:email,:password, :password_confirmation)
+=======
+  def new
+>>>>>>> 70b761c806233f3151758358c06829ef0171e504
   end
 end
