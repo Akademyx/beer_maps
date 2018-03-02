@@ -28,7 +28,11 @@ gem 'hirb'
 gem 'rails-footnotes', '~> 4.0'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
-gem 'bootstrap-sass'
+# gem 'bootstrap-sass', '~> 3.3.7'
+gem 'therubyracer'
+gem 'less-rails-bootstrap'
+gem 'rest-client'
+
 
 
 # Use Unicorn as the app server
@@ -40,6 +44,7 @@ gem 'bootstrap-sass'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'dotenv-rails'
 end
 
 group :development do
