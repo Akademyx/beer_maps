@@ -1,0 +1,74 @@
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">Beer Maps</a>
+    <div class="nav-bar" id="navbarResponsive">
+    </div>
+  </div>
+</nav>
+
+  <header class="masthead text-center text-white">
+    <div class="form">
+        <h3 style="margin-left: 120px;margin-bottom:15px;">Register</h3>
+        <form action = "/users" method="post" style="width:350px;">
+          <input name="authenticity_token" value="<%=
+          form_authenticity_token %>" type = 'hidden'>
+          <div class="reg_divs">
+            <label class="reg_label">First Name</label> <input class="reg_inputs" type="text" name='user[first_name]'>
+          </div>
+          <div class="reg_divs">
+            <label class="reg_label">Last Name</label> <input class="reg_inputs" type="text" name='user[last_name]'>
+          </div>
+          <div class="reg_divs">
+            <label class="reg_label">Email</label> <input class="reg_inputs" type="text" name='user[email]'>
+          </div>
+          <div class="reg_divs">
+            <label class="reg_label">Password</label> <input class="reg_inputs" type="password" name='user[password]'>
+          </div>
+          <p class="passconfir">*Password should be at least 8 characters</p>
+          <div class="reg_divs">
+            <label class="reg_label">Password Confirmation</label><input class="reg_inputs" type="password" name='user[password_confirmation]'> 
+          </div>
+          <input type="submit" class="btn btn-primary btn-xl rounded-pill mt-5" style='margin-left: 137px;' value="Register">
+        </form>
+      </div>
+      <div class="form">
+        <h3 style="margin-right:20px;">Login</h3>
+        <form action = "/sessions" method="post">
+          <input name="authenticity_token" value="<%=
+          form_authenticity_token %>" type = 'hidden'>
+          <div class="reg_divs">
+            <label>Email</label> <input class="reg_inputs" type="text" name='email'>
+          </div>
+          <div class="reg_divs">
+            <label>Password</label> <input class="reg_inputs" type="password" name='password'>
+          </div>
+          
+          <input type="submit" class="btn btn-primary btn-xl rounded-pill mt-5" value="Log In">  
+        </form>
+      </div>
+    </div>
+  </div>
+  <% if flash[:e] %>
+    <div class="errors">
+      <p><%= flash[:e] %></p>
+    </div>
+  <% end %>
+  
+  <% if flash[:error] %>
+    <div class="errors">
+      <% flash[:error].each do |x| %>
+        <p><%= x %></p>
+      <% end %>
+    </div>
+  <% end%>
+</header>
+
+<!-- Footer -->
+<footer class="py-5 bg-black">
+  <div class="container">
+    <p class="m-0 text-center text-white small">Copyright &copy; Beer Maps 2018</p>
+  </div>
+  <!-- /.container -->
+</footer>
+</body>

@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-<<<<<<< HEAD
     def index
     end
 
@@ -11,7 +10,7 @@ class UsersController < ApplicationController
     if @user.valid?
         @user.save
         session[:user_id] = @user.id
-        redirect_to '/songs'
+        redirect_to '/beers'
     else
         flash[:error]= @user.errors.full_messages
         redirect_to :back
@@ -21,8 +20,5 @@ class UsersController < ApplicationController
   private
   def user_params
     params.require(:user).permit(:first_name,:last_name,:email,:password, :password_confirmation)
-=======
-  def new
->>>>>>> 70b761c806233f3151758358c06829ef0171e504
   end
 end

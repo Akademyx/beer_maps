@@ -1,0 +1,98 @@
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Beer Maps</a>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <!-- <div class="collapse navbar-collapse" id="navbarResponsive"> -->
+        <div class="nav-bar" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/new">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/new">Log In</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead text-center text-white">
+      <div class="masthead-content">
+        <div class="container">
+          <h1 class="masthead-heading mb-0">Your Next Brew</h1>
+          <h2 class="masthead-subheading mb-0">Is Right Around The Corner...</h2>
+          <a href ='learnmore' class="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2" >
+            <p id="learnmore"></p>
+            <div class="p-5">
+              <%= image_tag "beer1.jpeg", class: "img-fluid rounded-circle" %>
+              <!-- <img class="img-fluid rounded-circle" src="img/01.jpg" alt=""> -->
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h2 class="display-4">Search by your favorite beer...</h2>
+              <p>Pick your favorite(or a few if you can't decide), and see all breweries that are serving nearby.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+                <h2 class="display-4">Or by business...</h2>
+                <p>Pick a brewery and view a full list of beers served at that location. Yes, even their seasonal beers, too!</p>
+              <!-- <img class="img-fluid rounded-circle" src="img/02.jpg" alt=""> -->
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-5">
+                <%= image_tag "beer2.jpeg", class: "img-fluid rounded-circle" %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <%= image_tag "beer6.jpeg", class: "img-fluid rounded-circle" %>
+              <!-- <img class="img-fluid rounded-circle" src="img/03.jpg" alt=""> -->
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h2 class="display-4">And that's it!</h2>
+              <p>Drink up! You deserve it.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-black">
+      <div class="container">
+        <p class="m-0 text-center text-white small">Copyright &copy; Beer Maps 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+  </body>

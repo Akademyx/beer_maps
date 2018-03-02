@@ -1,2 +1,204 @@
-@import "bootstrap-sprockets" ;
-@import "bootstrap";
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+body {
+  font-family: 'Lato';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Catamaran';
+  font-weight: 800 !important;
+  text-shadow: 2px 2px rgb(7, 5, 5);
+}
+
+.btn-xl {
+  text-transform: uppercase;
+  padding: 1.5rem 3rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.bg-black {
+  background-color: #000 !important;
+}
+
+.rounded-pill {
+  border-radius: 5rem;
+}
+
+.form{
+  display: inline-block;
+  vertical-align: top;
+}
+label{
+  margin-left: auto;
+}
+
+.navbar-custom {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  
+}
+.nav-item{
+  display:inline;
+}
+
+.navbar-custom .navbar-brand {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  color: #de1c1c;
+  display: inline;
+  
+}
+form{
+  display:block;
+}
+
+.navbar-custom .navbar-nav .nav-item .nav-link {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  color: #de1c1c; 
+  text-align: right;
+}
+.nav-link{
+  color: #de1c1c !important; 
+  
+}
+
+
+
+header.masthead {
+  position: relative;
+  overflow: hidden;
+  padding-top: calc(7rem + 72px);
+  padding-bottom: 7rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+  background-image: url("background.jpeg");
+}
+
+header.masthead .masthead-content {
+  z-index: 1;
+  position: relative;
+}
+
+header.masthead .masthead-content .masthead-heading {
+  font-size: 4rem;
+}
+
+header.masthead .masthead-content .masthead-subheading {
+  font-size: 2rem;
+}
+
+
+.display-4{
+  text-shadow: none;
+}
+label{
+  text-shadow: 2px 2px rgb(7, 5, 5);
+}
+.passconfir{
+  text-shadow: 2px 2px rgb(7, 5, 5);
+  text-align: right;
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    padding-top: calc(10rem + 55px);
+    padding-bottom: 10rem;
+  }
+  header.masthead .masthead-content .masthead-heading {
+    font-size: 6rem;
+  }
+  header.masthead .masthead-content .masthead-subheading {
+    font-size: 4rem;
+  }
+}
+
+
+
+.btn-primary {
+  background-color: #de1c1c !important;
+  border-color: #de1c1c !important;
+  margin-left: 5px;
+  
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: #a21422 !important;
+  border-color: #a21422 !important;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(238, 9, 121, 0.5);
+}
+
+.btn-secondary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(23, 10, 2, 0.5);
+}
+
+.reg_inputs{
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.reg_divs{
+  display:flex;
+  justify-content: space-between;
+}
+header.mastheadbeers {
+  position: relative;
+  overflow: hidden;
+  padding-top: calc(7rem + 72px);
+  padding-bottom: 7rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+  background-color: black;
+  margin: auto;
+  width: 80%;
+  // background-image: url("background.jpeg");
+}
+.errors{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 23%;
+  margin-left: 15px;
+  position: relative;
+  bottom: 325px;
+  
+
+}
+#map{
+  margin-left:20px;
+}
+
+
